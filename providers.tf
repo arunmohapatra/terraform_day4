@@ -6,8 +6,8 @@ terraform {
     organization = "LTC_Terraform_Cohort"
 
     workspaces {
-      #name    = "RemoteTerraformRun_modules"
-      name    = "Testing"
+      name    = "RemoteTerraformRun_modules"
+      #name    = "Testing"
       project = "Cohort_LTC_Proj"
     }
   }
