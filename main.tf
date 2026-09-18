@@ -58,3 +58,10 @@ module "app_server" {
   NAME = var.instance_name
   ZONE = var.availability_zone
 }
+
+module "s3_bucket" {
+  source  = "terraform-aws-modules/s3-bucket/aws"
+  version = "~> 5.0"
+
+  bucket = "ltc-s3-today"
+}
